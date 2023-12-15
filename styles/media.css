@@ -1,0 +1,52 @@
+@media screen and (width <=1200px) {
+
+    .page-header__nav {
+        margin-left: 0;
+    }
+}
+
+@media screen and (width < 1024px) {
+    .page-header__nav {
+        /* display: none; */
+        position: absolute;
+        left: 0;
+        top: var(--header-height);
+
+        background-color: #fff;
+    }
+
+    .page-header__links {
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+
+    .page-header__toggle-menu {
+        display: block;
+    }
+}
+
+@media screen and (width < 600px) {
+    .page-header__tel {
+        display: none;
+    }
+
+    .slider-block__content {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .slider__nav {
+        bottom: 20px;
+        left: 170px;
+    }
+
+    .cat {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+.infobox {
+    display:flex;
+    flex-direction: column;
+}
+}
